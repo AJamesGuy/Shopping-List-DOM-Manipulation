@@ -6,27 +6,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="shopping_list.js"></script>
+    <script src="shopping_list.js" defer></script>
     <title>Shopping List Application</title>
 </head>
 <body>
-    <h1>Your Shopping List</h1>
+    <h1>Welcome!</h1>
 <div class="my-container-one">
     <form>
     <div class="mb-3">
-        <label for="tasks" class="form-label">Add a task to your ToDo list:</label>
-        <input class="form-control" id="tasks">
+        <label for="tasks" class="form-label">Add item to list:</label>
+        <input class="form-control" id="list">
     </div>
-        <button type="submit" class="btn my-Btns" id="add-task">Add Task</button>
+        <button class="btn my-Btns" id="add-item">Add Item</button>
     </form>
 </div>
-    <div class="task-list" id="task-list">
+<div id="paper">
+    <h2 class="title">--- Shopping List ---</h2>
+
+</div>
+    <!-- <div class="list" id="list">
         <p>Hello, World!</p>
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
             <label class="form-check-label" for="switchCheckDefault">complete/incomplete</label>
         </div>
-        <button>DELETE</button>
-    </div>
+        <button class="delete-btn">DELETE</button>
+    </div> -->
 </body>
 </html>
