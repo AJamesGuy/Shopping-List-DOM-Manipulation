@@ -10,32 +10,30 @@
     <title>Shopping List Application</title>
 </head>
 <body>
-    <h1>MakeAList.com</h1>
-<div class="my-container">
-    <form>
-    <div class="mb-3">
-        <label for="tasks" class="form-label">Add item to list:</label>
-        <input class="form-control" id="list">
-    </div>
-        <button class="btn main-Btns" id="add-item">Add Item</button>
-        <button class="btn main-Btns" id="clear-all">Clear All</button>
-        <button class="btn main-Btns" id="clear-completed">Clear Completed</button>
-    </form>
-    
-</div>
+    <div class="container-wrapper">
+        <h1>Shopping List</h1>
+        <div class="my-container">
+            <form>
+            <div class="mb-3">
+                <label for="item-input" class="form-label">Add item to list:</label>
+                <input class="form-control" id="item-input">
+            </div>
+                <button class="btn main-Btns" id="add-btn">Add Item</button>
+                <button class="btn main-Btns" id="clear-all">Clear All</button>
+                <button class="btn main-Btns" id="clear-completed">Clear Completed</button>
+            </form>
+        </div>
 
-<div id="paper">
-    <h2 class="title">Shopping List</h2>
-</div>
-    <!-- <p>*Your Text Here*</p>
-        <div class="buttons" id="buttons">
-        <button class="completed-Btn">Complete</button>
-    </div> -->
-    <div class="stats">
-        <h2>STATS</h2>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
+        <div id="paper">
+            <ul id="shopping-list"></ul>
+        </div>
+
+        <div class="stats" id="stats">
+            <h2>STATS</h2>
+            <h4>Total: <span id="total-count">0</span></h4>
+            <h4>Remaining: <span id="remaining-count">0</span></h4>
+            <h4>Completed: <span id="completed-count">0</span></h4>
+        </div>
     </div>
 </body>
 </html>
